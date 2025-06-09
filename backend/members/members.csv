@@ -1,0 +1,31 @@
+first_name,last_name,email,phone,date_of_birth,gender,address,status,join_date,ministry,notes,profession,marital_status
+Ogechi,Nwosu,ogechi_nwosu@yahoo.com,+2347439397609,1986-04-16,female,"{""street"": ""466 Church Ave"", ""city"": ""Ibadan""}",active,2023-10-18,"[""Welfare""]",New member,Lawyer,Single
+Kunle,Adebayo,kunle.adebayo@gmail.com,+2347109657158,2000-01-14,male,"{""street"": ""359 Unity Rd"", ""city"": ""Ilorin""}",inactive,2023-03-25,"[""Children""]",Very punctual,Doctor,Married
+Yemi,Adeniyi,yemi.adeniyi@gmail.com,+2347343045746,1997-06-27,male,"{""street"": ""368 Unity Rd"", ""city"": ""Ibadan""}",new,2024-07-26,"[""Choir""]",Regular attendee,Trader,Single
+Femi,Adeniyi,femi87@gmail.com,+2347308359839,1990-07-02,male,"{""street"": ""47 Main St"", ""city"": ""Ondo""}",inactive,2024-07-14,"[""Children""]",Very punctual,Nurse,Married
+Ayo,Oladipo,ayo.oladipo@gmail.com,+2348460359662,2005-04-05,male,"{""street"": ""645 Main St"", ""city"": ""Ijebu Ode""}",active,2023-12-18,"[""Children""]",Regular attendee,Engineer,Single
+Amaka,Nwosu,nwosuamaka@yahoo.com,+2348940335529,2001-10-31,female,"{""street"": ""141 Main St"", ""city"": ""Ondo""}",inactive,2022-05-06,"[""Ushering""]",Active in children ministry,Trader,Married
+Yetunde,Ajayi,yetunde_ajayi@gmail.com,+2347194463059,2004-10-03,female,"{""street"": ""524 Church Ave"", ""city"": ""Akure""}",new,2022-09-11,"[""Ushering""]",Regular attendee,Trader,Married
+Chuka,Nwachukwu,chuka52@outlook.com,+2348051327106,1983-08-21,male,"{""street"": ""884 Main St"", ""city"": ""Ilorin""}",new,2024-09-28,"[""Prayer""]",New member,Accountant,Married
+Temi,Oladipo,temioladipo@yahoo.com,+2347691499203,1992-05-04,female,"{""street"": ""449 Side Rd"", ""city"": ""Ilorin""}",active,2023-06-18,"[""Choir""]",Needs follow-up,Developer,Single
+Ayo,Akinwumi,ayo.akinwumi@yahoo.com,+2348514865603,1987-05-31,male,"{""street"": ""202 Unity Rd"", ""city"": ""Osogbo""}",inactive,2024-02-20,"[""Choir""]",Regular attendee,Nurse,Married
+Ifeanyi,Eze,ifeanyi.eze@yahoo.com,+2348055188894,1987-05-07,male,"{""street"": ""386 Side Rd"", ""city"": ""Akure""}",active,2024-10-25,"[""Media""]",New member,Engineer,Single
+Ngozi,Okonkwo,ngozi55@gmail.com,+2348515028552,1981-10-11,female,"{""street"": ""464 Side Rd"", ""city"": ""Oyo""}",inactive,2022-12-03,"[""Choir""]",Active in children ministry,Nurse,Married
+Femi,Adebayo,femi_adebayo@yahoo.com,+2347001477538,1986-05-25,male,"{""street"": ""263 Church Ave"", ""city"": ""Ilorin""}",inactive,2023-01-29,"[""Protocol""]",Needs follow-up,Accountant,Single
+Chioma,Nwachukwu,chioma50@yahoo.com,+2348457831876,2004-01-19,female,"{""street"": ""289 Side Rd"", ""city"": ""Abeokuta""}",inactive,2023-01-18,"[""Ushering""]",Regular attendee,Nurse,Married
+Kelechi,Nwosu,kelechi_nwosu@gmail.com,+2348365153675,1988-08-29,male,"{""street"": ""637 Church Ave"", ""city"": ""Ibadan""}",new,2022-04-19,"[""Ushering""]",New member,Lawyer,Married
+Amaka,Okonkwo,amaka_okonkwo@outlook.com,+2349050283208,1993-11-08,female,"{""street"": ""663 Main St"", ""city"": ""Lagos""}",new,2023-06-08,"[""Technical""]",Active in children ministry,Electrician,Single
+Temi,Fashola,temi.fashola@gmail.com,+2347654264170,1985-01-23,female,"{""street"": ""746 Main St"", ""city"": ""Ondo""}",new,2023-05-07,"[""Protocol""]",Needs follow-up,Trader,Married
+Yemi,Ajayi,yemi.ajayi@outlook.com,+2347314067958,2005-05-02,male,"{""street"": ""563 Side Rd"", ""city"": ""Akure""}",inactive,2023-09-11,"[""Ushering""]",Active in children ministry,Developer,Single
+Temi,Adeyemi,adeyemitemi@outlook.com,+2348065394610,1990-02-12,female,"{""street"": ""47 Main St"", ""city"": ""Ilorin""}",active,2022-10-17,"[""Protocol""]",Very punctual,Developer,Married
+Kemi,Balogun,balogunkemi@outlook.com,+2347533703688,2002-08-26,female,"{""street"": ""375 Side Rd"", ""city"": ""Ilorin""}",inactive,2022-12-09,"[""Prayer""]",Needs follow-up,Accountant,Single
+Yemi,Akinwumi,yemi31@outlook.com,+2348938778928,1982-01-06,male,"{""street"": ""992 Church Ave"", ""city"": ""Ibadan""}",inactive,2023-04-21,"[""Technical""]",New member,Trader,Married
+Femi,Ogunleye,femiogunleye@outlook.com,+2348296152884,1983-07-28,male,"{""street"": ""136 Main St"", ""city"": ""Akure""}",new,2024-08-10,"[""Children""]",Regular attendee,Lawyer,Married
+Ayo,Ogunleye,ogunleyeayo@gmail.com,+2347545740971,1981-01-11,male,"{""street"": ""874 Side Rd"", ""city"": ""Ilorin""}",active,2024-03-03,"[""Choir""]",Regular attendee,Developer,Married
+Bola,Akinwumi,akinwumibola@outlook.com,+2347219936122,1991-01-27,female,"{""street"": ""37 Side Rd"", ""city"": ""Ibadan""}",inactive,2022-02-17,"[""Prayer""]",Needs follow-up,Developer,Single
+Femi,Adeniyi,femi_adeniyi@gmail.com,+2347452919709,2001-04-25,male,"{""street"": ""562 Church Ave"", ""city"": ""Ilorin""}",active,2022-05-14,"[""Welfare""]",New member,Electrician,Married
+Yemi,Adeniyi,yemi21@outlook.com,+2347913068397,1989-12-23,male,"{""street"": ""788 Side Rd"", ""city"": ""Ijebu Ode""}",active,2024-04-15,"[""Welfare""]",Regular attendee,Designer,Married
+Kelechi,Nwosu,kelechi_nwosu@outlook.com,+2347532462617,1990-11-15,male,"{""street"": ""447 Unity Rd"", ""city"": ""Akure""}",active,2022-12-02,"[""Media""]",Very punctual,Lawyer,Married
+Temi,Ajayi,temiajayi@outlook.com,+2347653496727,2002-10-04,female,"{""street"": ""578 Unity Rd"", ""city"": ""Akure""}",inactive,2023-09-04,"[""Children""]",Needs follow-up,Developer,Single
+Sade,Adeyemi,sade_adeyemi@outlook.com,+2347950152915,2002-12-13,female,"{""street"": ""366 Church Ave"", ""city"": ""Ife""}",inactive,2024-05-17,"[""Welfare""]",Active in children ministry,Designer,Married
+Sade,Fashola,sadefashola@gmail.com,+2349097389721,1980-01-23,female,"{""street"": ""711 Church Ave"", ""city"": ""Akure""}",inactive,2022-09-15,"[""Children""]",Very punctual,Accountant,Single

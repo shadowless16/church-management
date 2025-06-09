@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sermons - The Nest Church</title>
+    <meta name="description" content="Listen to inspiring messages from our pastoral team and grow in your faith journey. Access our sermon archive, download resources, and subscribe to our podcast.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sermons.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">The Nest Church</a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sermons.html" class="nav-link active">Sermons</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.html" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ministries.html" class="nav-link">Ministries</a>
+                </li>
+                <li class="nav-item">
+                    <a href="give.html" class="nav-link">Give</a>
+                </li>
+                <li class="nav-item">
+                    <a href="prayer.html" class="nav-link">Prayer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="testimonies.html" class="nav-link">Testimonies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="live.html" class="nav-link btn btn-secondary">Watch Live</a>
+                </li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1493804714600-6edb1cd93080?w=1920&h=600&fit=crop&crop=center" alt="Sermons at The Nest Church" loading="lazy">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Sermons</h1>
+            <p>Listen to inspiring messages from our pastoral team and grow in your faith journey</p>
+        </div>
+    </section>
+
+    <!-- Featured Sermons Section -->
+    <section class="featured-sermons">
+        <div class="container">
+            <h2>Featured Messages</h2>
+            
+            <div class="featured-sermons-grid">
+                <div class="featured-sermon">
+                    <div class="sermon-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600&h=400&fit=crop&crop=center" alt="Walking in Faith During Uncertain Times" loading="lazy">
+                        <div class="sermon-overlay">
+                            <button class="play-btn" aria-label="Play sermon" data-sermon-id="sermon-1">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <span class="sermon-badge">Featured</span>
+                    </div>
+                    <div class="sermon-content">
+                        <h3>Walking in Faith During Uncertain Times</h3>
+                        <div class="sermon-meta">
+                            <span class="sermon-speaker">Pastor John Adebayo</span>
+                            <span class="sermon-series">Faith Foundations</span>
+                        </div>
+                        <div class="sermon-details">
+                            <div class="sermon-date">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                                <span>June 2, 2025</span>
+                            </div>
+                            <div class="sermon-duration">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                <span>45 min</span>
+                            </div>
+                        </div>
+                        <p class="sermon-description">Discover how to maintain unwavering faith when life's circumstances seem overwhelming.</p>
+                        <div class="sermon-actions">
+                            <button class="btn btn-primary btn-sm sermon-watch" data-sermon-id="sermon-1">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                                Watch Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="featured-sermon">
+                    <div class="sermon-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&h=400&fit=crop&crop=center" alt="The Power of Forgiveness" loading="lazy">
+                        <div class="sermon-overlay">
+                            <button class="play-btn" aria-label="Play sermon" data-sermon-id="sermon-2">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <span class="sermon-badge">Featured</span>
+                    </div>
+                    <div class="sermon-content">
+                        <h3>The Power of Forgiveness</h3>
+                        <div class="sermon-meta">
+                            <span class="sermon-speaker">Pastor Grace Adebayo</span>
+                            <span class="sermon-series">Healing Hearts</span>
+                        </div>
+                        <div class="sermon-details">
+                            <div class="sermon-date">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                                <span>May 26, 2025</span>
+                            </div>
+                            <div class="sermon-duration">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                <span>38 min</span>
+                            </div>
+                        </div>
+                        <p class="sermon-description">Understanding God's forgiveness and learning to forgive others as Christ forgave us.</p>
+                        <div class="sermon-actions">
+                            <button class="btn btn-primary btn-sm sermon-watch" data-sermon-id="sermon-2">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                                Watch Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sermon Series Section -->
+    <section class="sermon-series-section">
+        <div class="container">
+            <h2>Sermon Series</h2>
+            
+            <div class="sermon-series-grid">
+                <div class="series-card">
+                    <div class="series-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=250&fit=crop&crop=center" alt="Faith Foundations" loading="lazy">
+                        <div class="series-count">8 Messages</div>
+                    </div>
+                    <div class="series-content">
+                        <h3>Faith Foundations</h3>
+                        <p>Building unshakeable faith in uncertain times</p>
+                        <div class="series-dates">
+                            <span>April 1, 2025</span>
+                            <span>-</span>
+                            <span>May 26, 2025</span>
+                        </div>
+                        <a href="#" class="btn btn-outline btn-sm">View Series</a>
+                    </div>
+                </div>
+                
+                <div class="series-card">
+                    <div class="series-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=400&h=250&fit=crop&crop=center" alt="Healing Hearts" loading="lazy">
+                        <div class="series-count">6 Messages</div>
+                    </div>
+                    <div class="series-content">
+                        <h3>Healing Hearts</h3>
+                        <p>God's restoration for broken hearts and relationships</p>
+                        <div class="series-dates">
+                            <span>March 1, 2025</span>
+                            <span>-</span>
+                            <span>April 12, 2025</span>
+                        </div>
+                        <a href="#" class="btn btn-outline btn-sm">View Series</a>
+                    </div>
+                </div>
+                
+                <div class="series-card">
+                    <div class="series-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?w=400&h=250&fit=crop&crop=center" alt="Discovering Your Destiny" loading="lazy">
+                        <div class="series-count">5 Messages</div>
+                    </div>
+                    <div class="series-content">
+                        <h3>Discovering Your Destiny</h3>
+                        <p>Understanding God's unique purpose for your life</p>
+                        <div class="series-dates">
+                            <span>February 1, 2025</span>
+                            <span>-</span>
+                            <span>March 8, 2025</span>
+                        </div>
+                        <a href="#" class="btn btn-outline btn-sm">View Series</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="sermon-search">
+        <div class="container">
+            <div class="search-filter-container">
+                <div class="search-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                    <input type="text" id="sermon-search-input" placeholder="Search sermons by title, speaker, or topic...">
+                </div>
+                
+                <div class="filter-controls">
+                    <div class="filter-select">
+                        <select id="series-filter">
+                            <option value="all">All Series</option>
+                            <option value="faith-foundations">Faith Foundations</option>
+                            <option value="healing-hearts">Healing Hearts</option>
+                            <option value="discovering-your-destiny">Discovering Your Destiny</option>
+                            <option value="community-life">Community Life</option>
+                            <option value="generous-living">Generous Living</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-select">
+                        <select id="sort-filter">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="popular">Most Popular</option>
+                            <option value="title">Title A-Z</option>
+                        </select>
+                    </div>
+                    
+                    <div class="view-toggle">
+                        <button class="view-btn active" data-view="grid" aria-label="Grid view">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="7" height="7"/>
+                                <rect x="14" y="3" width="7" height="7"/>
+                                <rect x="3" y="14" width="7" height="7"/>
+                                <rect x="14" y="14" width="7" height="7"/>
+                            </svg>
+                        </button>
+                        <button class="view-btn" data-view="list" aria-label="List view">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="8" y1="6" x2="21" y2="6"/>
+                                <line x1="8" y1="12" x2="21" y2="12"/>
+                                <line x1="8" y1="18" x2="21" y2="18"/>
+                                <line x1="3" y1="6" x2="3.01" y2="6"/>
+                                <line x1="3" y1="12" x2="3.01" y2="12"/>
+                                <line x1="3" y1="18" x2="3.01" y2="18"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Sermons Section -->
+    <section class="all-sermons">
+        <div class="container">
+            <h2>All Sermons</h2>
+            
+            <div class="sermons-grid" id="sermons-container">
+                <!-- Sermon 1 -->
+                <div class="sermon-card" data-series="faith-foundations">
+                    <div class="sermon-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=350&h=200&fit=crop&crop=center" alt="Walking in Faith During Uncertain Times" loading="lazy">
+                        <div class="sermon-overlay">
+                            <button class="play-btn" aria-label="Play sermon" data-sermon-id="sermon-1">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="sermon-duration-badge">45 min</div>
+                    </div>
+                    <div class="sermon-content">
+                        <span class="sermon-series-tag">Faith Foundations</span>
+                        <h3>Walking in Faith During Uncertain Times</h3>
+                        <div class="sermon-meta">
+                            <div class="sermon-speaker">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                                <span>Pastor John Adebayo</span>
+                            </div>
+                            <div class="sermon-date">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                                <span>June 2, 2025</span>
+                            </div>
+                        </div>
+                        <p class="sermon-description">Discover how to maintain unwavering faith when life's circumstances seem overwhelming.</p>
+                        <div class="sermon-scripture">
+                            <strong>Scripture:</strong> Hebrews 11:1
+                        </div>
+                        <div class="sermon-actions">
+                            <button class="btn btn-primary btn-sm sermon-watch" data-sermon-id="sermon-1">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                                Watch
+                            </button>
+                            <div class="sermon-links">
+                                <a href="#" class="sermon-link" aria-label="Download audio" title="Download audio">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                        <polyline points="7 10 12 15 17 10"/>
+                                        <line x1="12" y1="15" x2="12" y2="3"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="sermon-link" aria-label="Share sermon" title="Share sermon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="18" cy="5" r="3"/>
+                                        <circle cx="6" cy="12" r="3"/>
+                                        <circle cx="18" cy="19" r="3"/>
+                                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="sermon-link" aria-label="Add to favorites" title="Add to favorites">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sermon 2 -->
+                <div class="sermon-card" data-series="healing-hearts">
+                    <div class="sermon-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=350&h=200&fit=crop&crop=center" alt="The Power of Forgiveness" loading="lazy">
+                        <div class="sermon-overlay">
+                            <button class="play-btn" aria-label="Play sermon" data-sermon-id="sermon-2">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="sermon-duration-badge">38 min</div>
+                    </div>
+                    <div class="sermon-content">
+                        <span class="sermon-series-tag">Healing Hearts</span>
+                        <h3>The Power of Forgiveness</h3>
+                        <div class="sermon-meta">
+                            <div class="sermon-speaker">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                                <span>Pastor Grace Adebayo</span>
+                            </div>
+                            <div class="sermon-date">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                                <span>May 26, 2025</span>
+                            </div>
+                        </div>
+                        <p class="sermon-description">Understanding God's forgiveness and learning to forgive others as Christ forgave us.</p>
+                        <div class="sermon-scripture">
+                            <strong>Scripture:</strong> Matthew 6:14-15
+                        </div>
+                        <div class="sermon-actions">
+                            <button class="btn btn-primary btn-sm sermon-watch" data-sermon-id="sermon-2">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                                Watch
+                            </button>
+                            <div class="sermon-links">
+                                <a href="#" class="sermon-link" aria-label="Download audio" title="Download audio">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                        <polyline points="7 10 12 15 17 10"/>
+                                        <line x1="12" y1="15" x2="12" y2="3"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="sermon-link" aria-label="Share sermon" title="Share sermon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="18" cy="5" r="3"/>
+                                        <circle cx="6" cy="12" r="3"/>
+                                        <circle cx="18" cy="19" r="3"/>
+                                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="sermon-link" aria-label="Add to favorites" title="Add to favorites">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sermon 3 -->
+                <div class="sermon-card" data-series="discovering-your-destiny">
+                    <div class="sermon-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?w=350&h=200&fit=crop&crop=center" alt="Purpose-Driven Living" loading="lazy">
+                        <div class="sermon-overlay">
+                            <button class="play-btn" aria-label="Play sermon" data-sermon-id="sermon-3">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="sermon-duration-badge">42 min</div>
+                    </div>
+                    <div class="sermon-content">
+                        <span class="sermon-series-tag">Discovering Your Destiny</span>
+                        <h3>Purpose-Driven Living</h3>
+                        <div class="sermon-meta">
+                            <div class="sermon-speaker">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                                <span>Pastor John Adebayo</span>
+                            </div>
+                            <div class="sermon-date">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                                <span>May 19, 2025</span>
+                            </div>
+                        </div>
+                        <p class="sermon-description">How to discover and walk in God's unique purpose for your life.</p>
+                        <div class="sermon-scripture">
+                            <strong>Scripture:</strong> Jeremiah 29:11
+                        </div>
+                        <div class="sermon-actions">
+                            <button class="btn btn-primary btn-sm sermon-watch" data-sermon-id="sermon-3">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                                Watch
+                            </button>
+                            <div class="sermon-links">
+                                <a href="#" class="sermon-link" aria-label="Download audio" title="Download audio">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                        <polyline points="7 10 12 15 17 10"/>
+                                        <line x1="12" y1="15" x2="12" y2="3"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="sermon-link" aria-label="Share sermon" title="Share sermon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="18" cy="5" r="3"/>
+                                        <circle cx="6" cy="12" r="3"/>
+                                        <circle cx="18" cy="19" r="3"/>
+                                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="sermon-link" aria-label="Add to favorites" title="Add to favorites">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More sermons would be added here -->
+            </div>
+            
+            <!-- Empty State (hidden by default) -->
+            <div class="empty-state" id="empty-state" style="display: none;">
+                <div class="empty-state-icon">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                </div>
+                <h3>No sermons found</h3>
+                <p>We couldn't find any sermons matching your search criteria. Try adjusting your filters or search terms.</p>
+                <button class="btn btn-outline" id="clear-filters">Clear Filters</button>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="load-more">
+                <button class="btn btn-outline" id="load-more-btn">Load More Sermons</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sermon Player Modal -->
+    <div class="sermon-modal" id="sermon-modal">
+        <div class="sermon-modal-content">
+            <div class="sermon-modal-header">
+                <h3 id="modal-sermon-title">Sermon Title</h3>
+                <button class="close-modal" id="close-modal" aria-label="Close modal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="sermon-modal-body">
+                <div class="sermon-video-container">
+                    <iframe id="sermon-video-frame" src="" title="Sermon Video" allowfullscreen></iframe>
+                </div>
+                <div class="sermon-modal-info">
+                    <div class="sermon-modal-meta">
+                        <div class="modal-speaker" id="modal-speaker">Pastor John Adebayo</div>
+                        <div class="modal-series" id="modal-series">Faith Foundations</div>
+                        <div class="modal-date" id="modal-date">June 2, 2025</div>
+                    </div>
+                    <div class="sermon-modal-description" id="modal-description">
+                        Sermon description will appear here.
+                    </div>
+                    <div class="sermon-modal-scripture" id="modal-scripture">
+                        <strong>Scripture:</strong> <span id="modal-scripture-text">Hebrews 11:1</span>
+                    </div>
+                    <div class="sermon-modal-actions">
+                        <div class="sermon-modal-downloads">
+                            <h4>Downloads</h4>
+                            <div class="download-buttons">
+                                <a href="#" class="btn btn-sm btn-outline">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                        <polyline points="7 10 12 15 17 10"/>
+                                        <line x1="12" y1="15" x2="12" y2="3"/>
+                                    </svg>
+                                    Audio
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                        <polyline points="7 10 12 15 17 10"/>
+                                        <line x1="12" y1="15" x2="12" y2="3"/>
+                                    </svg>
+                                    Notes
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                        <polyline points="7 10 12 15 17 10"/>
+                                        <line x1="12" y1="15" x2="12" y2="3"/>
+                                    </svg>
+                                    Transcript
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sermon-modal-share">
+                            <h4>Share</h4>
+                            <div class="share-buttons">
+                                <button class="btn btn-sm btn-outline">
+                                    <span>📧</span> Email
+                                </button>
+                                <button class="btn btn-sm btn-outline">
+                                    <span>📱</span> WhatsApp
+                                </button>
+                                <button class="btn btn-sm btn-outline">
+                                    <span>📘</span> Facebook
+                                </button>
+                                <button class="btn btn-sm btn-outline">
+                                    <span>🐦</span> Twitter
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sermon-modal-related">
+                <h4>More from this Series</h4>
+                <div class="related-sermons">
+                    <div class="related-sermon">
+                        <div class="related-sermon-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=120&h=80&fit=crop&crop=center" alt="Related sermon" loading="lazy">
+                            <div class="related-sermon-play">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="related-sermon-info">
+                            <h5>Overcoming Fear with Faith</h5>
+                            <span>43 min</span>
+                        </div>
+                    </div>
+                    <div class="related-sermon">
+                        <div class="related-sermon-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=120&h=80&fit=crop&crop=center" alt="Related sermon" loading="lazy">
+                            <div class="related-sermon-play">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="related-sermon-info">
+                            <h5>Faith That Moves Mountains</h5>
+                            <span>39 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Signup -->
+    <section class="sermon-newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Never Miss a Message</h2>
+                <p>Subscribe to our sermon podcast and get notified when new messages are available. Listen on your favorite platform.</p>
+                <div class="newsletter-form-container">
+                    <form class="newsletter-form" id="sermon-newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>The Nest Church</h3>
+                    <p>A place of grace, love, and spiritual growth</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="give.html">Give</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Service Times</h4>
+                    <p>Sunday Service: 2:00 PM</p>
+                    <p>Bible Study: Wednesday 6:00 PM</p>
+                    <p>Prayer Meeting: Friday 7:00 PM</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Ikotun, Lagos, Nigeria
+                        </p>
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            +234 123 456 7890
+                        </p>
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            info@thenestchurch.org
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Nest Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/sermons.js"></script>
+</body>
+</html>

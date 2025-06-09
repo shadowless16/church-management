@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonies - The Nest Church</title>
+    <meta name="description" content="Read inspiring testimonies from The Nest Church family and share your own story of God's faithfulness and miraculous works.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/testimonies.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">The Nest Church</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="sermons.html" class="nav-link">Sermons</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="ministries.html" class="nav-link">Ministries</a></li>
+                <li><a href="give.html" class="nav-link">Give</a></li>
+                <li><a href="prayer.html" class="nav-link">Prayer</a></li>
+                <li><a href="testimonies.html" class="nav-link active">Testimonies</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="live.html" class="nav-link btn btn-primary">Watch Live</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="testimonies-hero">
+            <div class="hero-background">
+                <img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Joyful worship" loading="lazy">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>God is Still Doing Wonders!</h1>
+                    <p>Read inspiring testimonies from our church family and share your own story of God's faithfulness</p>
+                    <button class="btn btn-secondary" id="share-testimony-btn">Share Your Testimony</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scripture Section -->
+        <section class="scripture-section">
+            <div class="container">
+                <div class="scripture-content">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <blockquote>
+                        "And they overcame him by the blood of the Lamb, and by the word of their testimony; and they loved not their lives unto the death."
+                    </blockquote>
+                    <cite>- Revelation 12:11</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimony Categories -->
+        <section class="testimony-categories">
+            <div class="container">
+                <h2>Categories of Testimonies</h2>
+                <div class="categories-grid">
+                    <div class="category-card" data-category="healing">
+                        <i class="fas fa-heart category-icon"></i>
+                        <h3>Healing & Miracles</h3>
+                        <p>Stories of divine healing and miraculous interventions</p>
+                        <span class="testimony-count">12 testimonies</span>
+                    </div>
+                    <div class="category-card" data-category="financial">
+                        <i class="fas fa-coins category-icon"></i>
+                        <h3>Financial Breakthrough</h3>
+                        <p>God's provision and financial miracles</p>
+                        <span class="testimony-count">8 testimonies</span>
+                    </div>
+                    <div class="category-card" data-category="family">
+                        <i class="fas fa-home category-icon"></i>
+                        <h3>Family Restoration</h3>
+                        <p>Restored marriages and family relationships</p>
+                        <span class="testimony-count">15 testimonies</span>
+                    </div>
+                    <div class="category-card" data-category="deliverance">
+                        <i class="fas fa-dove category-icon"></i>
+                        <h3>Deliverance & Freedom</h3>
+                        <p>Freedom from addiction and bondages</p>
+                        <span class="testimony-count">6 testimonies</span>
+                    </div>
+                    <div class="category-card" data-category="salvation">
+                        <i class="fas fa-cross category-icon"></i>
+                        <h3>Salvation Stories</h3>
+                        <p>Life-changing encounters with Jesus</p>
+                        <span class="testimony-count">20 testimonies</span>
+                    </div>
+                    <div class="category-card" data-category="career">
+                        <i class="fas fa-briefcase category-icon"></i>
+                        <h3>Career & Purpose</h3>
+                        <p>Divine direction and career breakthroughs</p>
+                        <span class="testimony-count">10 testimonies</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter and Search -->
+        <section class="testimony-filters">
+            <div class="container">
+                <div class="filters-header">
+                    <h3>Browse Testimonies</h3>
+                    <div class="search-box">
+                        <input type="text" id="testimony-search" placeholder="Search testimonies...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-category="all">All Stories</button>
+                    <button class="filter-btn" data-category="healing">Healing</button>
+                    <button class="filter-btn" data-category="financial">Financial</button>
+                    <button class="filter-btn" data-category="family">Family</button>
+                    <button class="filter-btn" data-category="deliverance">Deliverance</button>
+                    <button class="filter-btn" data-category="salvation">Salvation</button>
+                    <button class="filter-btn" data-category="career">Career</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonies Grid -->
+        <section class="testimonies-grid">
+            <div class="container">
+                <div class="testimonies-container" id="testimonies-container">
+                    <!-- Testimonies will be dynamically loaded here -->
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="btn btn-outline" id="load-more-testimonies">Load More Stories</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Share Testimony Section -->
+        <section class="share-testimony-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Have a Testimony to Share?</h2>
+                    <p>Your story could be the encouragement someone needs today. Share how God has worked in your life and inspire others in their faith journey.</p>
+                    <button class="btn btn-primary btn-large" id="open-testimony-form">Share Your Story</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Testimony Form Modal -->
+    <div class="modal" id="testimony-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Share Your Testimony</h2>
+                <button class="close-btn" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="testimony-form" class="testimony-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="testimony-name">Your Name</label>
+                            <input type="text" id="testimony-name" name="name" placeholder="Enter your full name">
+                            <small>Leave blank if you prefer to remain anonymous</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="testimony-email">Email Address</label>
+                            <input type="email" id="testimony-email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="testimony-category">Testimony Category</label>
+                        <select id="testimony-category" name="category" required>
+                            <option value="">Select a category</option>
+                            <option value="healing">Healing & Miracles</option>
+                            <option value="financial">Financial Breakthrough</option>
+                            <option value="family">Family Restoration</option>
+                            <option value="deliverance">Deliverance & Freedom</option>
+                            <option value="salvation">Salvation Story</option>
+                            <option value="career">Career & Purpose</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="testimony-title">Testimony Title</label>
+                        <input type="text" id="testimony-title" name="title" placeholder="Give your testimony a compelling title" required>
+                        <small>Example: "God Healed My Marriage" or "From Addiction to Freedom"</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="testimony-content">Your Testimony</label>
+                        <textarea id="testimony-content" name="content" placeholder="Share your story in detail. Include what happened, how God intervened, and the impact it had on your life..." required></textarea>
+                        <div class="character-count">
+                            <span id="char-count">0</span> / 2000 characters
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="testimony-scripture">Related Scripture (Optional)</label>
+                        <input type="text" id="testimony-scripture" name="scripture" placeholder="e.g., Jeremiah 29:11">
+                        <small>Include a Bible verse that relates to your testimony</small>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="allow-publication" name="allow_publication" checked>
+                            <span class="checkmark"></span>
+                            I give permission for this testimony to be published on the church website and used in church materials
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="contact-permission" name="contact_permission">
+                            <span class="checkmark"></span>
+                            I'm open to being contacted by church leadership about my testimony
+                        </label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline" id="cancel-testimony">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Submit Testimony</button>
+                    </div>
+                </form>
+
+                <!-- Success Message -->
+                <div class="success-message" id="testimony-success" style="display: none;">
+                    <i class="fas fa-check-circle success-icon"></i>
+                    <h3>Thank You for Sharing!</h3>
+                    <p>Your testimony has been submitted successfully. Our team will review it and publish it soon. Your story will be a blessing to many!</p>
+                    <button class="btn btn-primary" id="close-success">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>The Nest Church</h3>
+                    <p>Building a community where everyone can find their place in God's family and grow in their relationship with Jesus Christ.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="give.html">Give Online</a></li>
+                        <li><a href="prayer.html">Prayer Requests</a></li>
+                        <li><a href="testimonies.html">Share Testimony</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="live.html">Watch Live</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section contact-info">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Ikotun, Lagos, Nigeria</p>
+                    <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> info@thenestchurch.org</p>
+                    <p><i class="fas fa-clock"></i> Sunday Service: 2:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Nest Church. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/testimonies.js"></script>
+</body>
+</html>

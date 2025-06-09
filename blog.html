@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Devotionals - The Nest Church</title>
+    <meta name="description" content="Read inspiring blog posts, devotionals, and spiritual insights from The Nest Church. Grow in your faith with our weekly articles and biblical teachings.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">The Nest Church</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="sermons.html" class="nav-link">Sermons</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="ministries.html" class="nav-link">Ministries</a></li>
+                <li><a href="give.html" class="nav-link">Give</a></li>
+                <li><a href="prayer.html" class="nav-link">Prayer</a></li>
+                <li><a href="testimonies.html" class="nav-link">Testimonies</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="live.html" class="nav-link btn btn-primary">Watch Live</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="blog-hero">
+            <div class="hero-background">
+                <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Open Bible" loading="lazy">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Blog & Devotionals</h1>
+                    <p>Spiritual insights and encouragement for your daily walk with God</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Post -->
+        <section class="featured-post">
+            <div class="container">
+                <div class="featured-content">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Featured Post" loading="lazy">
+                        <div class="featured-badge">Featured</div>
+                    </div>
+                    <div class="featured-text">
+                        <div class="post-meta">
+                            <span class="category">Faith</span>
+                            <span class="date">June 2, 2025</span>
+                            <span class="read-time">5 min read</span>
+                        </div>
+                        <h2>Finding Peace in Troubled Times</h2>
+                        <p>In a world filled with uncertainty and challenges, how do we find lasting peace? Discover the biblical foundation for peace that transcends understanding and learn practical ways to cultivate tranquility in your daily life, even when storms rage around you.</p>
+                        <div class="post-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" alt="Pastor John Adebayo" class="author-image">
+                            <div class="author-info">
+                                <strong>Pastor John Adebayo</strong>
+                                <span>Senior Pastor</span>
+                            </div>
+                        </div>
+                        <a href="blog-post.html?id=finding-peace" class="btn btn-primary">Read Full Article</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Filters -->
+        <section class="blog-filters">
+            <div class="container">
+                <div class="filters-header">
+                    <h3>Browse Articles</h3>
+                    <div class="search-box">
+                        <input type="text" id="blog-search" placeholder="Search articles...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-category="all">All Posts</button>
+                    <button class="filter-btn" data-category="faith">Faith</button>
+                    <button class="filter-btn" data-category="family">Family</button>
+                    <button class="filter-btn" data-category="prayer">Prayer</button>
+                    <button class="filter-btn" data-category="community">Community</button>
+                    <button class="filter-btn" data-category="devotional">Devotional</button>
+                    <button class="filter-btn" data-category="youth">Youth</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <section class="blog-posts">
+            <div class="container">
+                <div class="posts-grid" id="posts-grid">
+                    <!-- Blog posts will be dynamically loaded here -->
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="btn btn-outline" id="load-more-btn">Load More Articles</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-signup">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2>Stay Connected</h2>
+                        <p>Subscribe to our weekly devotional and never miss inspiring content that will strengthen your faith journey.</p>
+                    </div>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                        <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Tags -->
+        <section class="popular-tags">
+            <div class="container">
+                <h3>Popular Topics</h3>
+                <div class="tags-cloud">
+                    <a href="#" class="tag">Prayer</a>
+                    <a href="#" class="tag">Faith</a>
+                    <a href="#" class="tag">Bible Study</a>
+                    <a href="#" class="tag">Christian Living</a>
+                    <a href="#" class="tag">Family</a>
+                    <a href="#" class="tag">Worship</a>
+                    <a href="#" class="tag">Community</a>
+                    <a href="#" class="tag">Youth Ministry</a>
+                    <a href="#" class="tag">Discipleship</a>
+                    <a href="#" class="tag">Evangelism</a>
+                    <a href="#" class="tag">Marriage</a>
+                    <a href="#" class="tag">Parenting</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>The Nest Church</h3>
+                    <p>Building a community where everyone can find their place in God's family and grow in their relationship with Jesus Christ.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="give.html">Give Online</a></li>
+                        <li><a href="prayer.html">Prayer Requests</a></li>
+                        <li><a href="testimonies.html">Share Testimony</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="live.html">Watch Live</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section contact-info">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Ikotun, Lagos, Nigeria</p>
+                    <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> info@thenestchurch.org</p>
+                    <p><i class="fas fa-clock"></i> Sunday Service: 2:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Nest Church. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

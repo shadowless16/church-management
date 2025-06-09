@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Nest Church</title>
+    <meta name="description" content="Get in touch with The Nest Church. Find our location, service times, contact information, and send us a message. We'd love to hear from you!">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">The Nest Church</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="sermons.html" class="nav-link">Sermons</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="ministries.html" class="nav-link">Ministries</a></li>
+                <li><a href="give.html" class="nav-link">Give</a></li>
+                <li><a href="prayer.html" class="nav-link">Prayer</a></li>
+                <li><a href="testimonies.html" class="nav-link">Testimonies</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="live.html" class="nav-link btn btn-primary">Watch Live</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="hero-background">
+                <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Church building" loading="lazy">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Get in Touch</h1>
+                    <p>We'd love to hear from you. Reach out with any questions, prayer requests, or to learn more about our church family.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact Info -->
+        <section class="quick-contact">
+            <div class="container">
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt card-icon"></i>
+                        <h3>Visit Us</h3>
+                        <p>Ikotun, Lagos, Nigeria</p>
+                        <a href="#map-section" class="card-link">View on Map</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone card-icon"></i>
+                        <h3>Call Us</h3>
+                        <p>+234 123 456 7890</p>
+                        <a href="tel:+2341234567890" class="card-link">Call Now</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope card-icon"></i>
+                        <h3>Email Us</h3>
+                        <p>info@thenestchurch.org</p>
+                        <a href="mailto:info@thenestchurch.org" class="card-link">Send Email</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-clock card-icon"></i>
+                        <h3>Service Times</h3>
+                        <p>Sunday: 2:00 PM</p>
+                        <a href="#service-times" class="card-link">View All Times</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form and Info -->
+        <section class="contact-main">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                        
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">First Name *</label>
+                                    <input type="text" id="first-name" name="first_name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name *</label>
+                                    <input type="text" id="last-name" name="last_name" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="pastoral">Pastoral Care</option>
+                                    <option value="prayer">Prayer Request</option>
+                                    <option value="ministry">Ministry Information</option>
+                                    <option value="events">Events & Programs</option>
+                                    <option value="volunteer">Volunteer Opportunities</option>
+                                    <option value="technical">Website/Technical Issue</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" placeholder="Please share your message, questions, or prayer requests..." required></textarea>
+                                <div class="character-count">
+                                    <span id="message-char-count">0</span> / 1000 characters
+                                </div>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter-signup" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    I'd like to receive updates and newsletters from The Nest Church
+                                </label>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="prayer-list" name="prayer_list">
+                                    <span class="checkmark"></span>
+                                    Please add me to your prayer list
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div class="success-message" id="contact-success" style="display: none;">
+                            <i class="fas fa-check-circle success-icon"></i>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for reaching out to us. We've received your message and will get back to you within 24-48 hours.</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="contact-info-section">
+                        <div class="info-card">
+                            <h3>Church Office Hours</h3>
+                            <div class="office-hours">
+                                <div class="hours-item">
+                                    <span class="day">Monday - Friday</span>
+                                    <span class="time">9:00 AM - 5:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">Saturday</span>
+                                    <span class="time">10:00 AM - 2:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">Sunday</span>
+                                    <span class="time">12:00 PM - 4:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-card" id="service-times">
+                            <h3>Service Schedule</h3>
+                            <div class="service-schedule">
+                                <div class="service-item">
+                                    <i class="fas fa-church service-icon"></i>
+                                    <div class="service-details">
+                                        <h4>Sunday Worship Service</h4>
+                                        <p>2:00 PM - 4:00 PM</p>
+                                        <small>Main sanctuary worship with praise, teaching, and fellowship</small>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <i class="fas fa-book-open service-icon"></i>
+                                    <div class="service-details">
+                                        <h4>Wednesday Bible Study</h4>
+                                        <p>6:00 PM - 7:30 PM</p>
+                                        <small>In-depth Bible study and discussion</small>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <i class="fas fa-praying-hands service-icon"></i>
+                                    <div class="service-details">
+                                        <h4>Friday Prayer Meeting</h4>
+                                        <p>7:00 PM - 8:30 PM</p>
+                                        <small>Corporate prayer and intercession</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Leadership Team</h3>
+                            <div class="leadership-list">
+                                <div class="leader-item">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" alt="Pastor John Adebayo" class="leader-photo">
+                                    <div class="leader-info">
+                                        <h4>Pastor John Adebayo</h4>
+                                        <p>Senior Pastor</p>
+                                        <a href="mailto:pastor@thenestchurch.org">pastor@thenestchurch.org</a>
+                                    </div>
+                                </div>
+                                <div class="leader-item">
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" alt="Pastor Grace Adebayo" class="leader-photo">
+                                    <div class="leader-info">
+                                        <h4>Pastor Grace Adebayo</h4>
+                                        <p>Associate Pastor</p>
+                                        <a href="mailto:grace@thenestchurch.org">grace@thenestchurch.org</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Emergency Contact</h3>
+                            <p>For urgent pastoral care or emergencies outside office hours:</p>
+                            <div class="emergency-contact">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <strong>Emergency Line</strong>
+                                    <p>+234 123 456 7891</p>
+                                    <small>Available 24/7 for emergencies</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section" id="map-section">
+            <div class="container">
+                <h2>Find Us</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marker-alt map-icon"></i>
+                        <h3>The Nest Church</h3>
+                        <p>Ikotun, Lagos, Nigeria</p>
+                        <div class="map-actions">
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-outline">
+                                <i class="fas fa-directions"></i> Get Directions
+                            </a>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-outline">
+                                <i class="fas fa-map"></i> View on Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="location-details">
+                    <div class="location-grid">
+                        <div class="location-item">
+                            <i class="fas fa-car location-icon"></i>
+                            <div>
+                                <h4>Parking</h4>
+                                <p>Free parking available on-site with spaces for over 100 vehicles</p>
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <i class="fas fa-wheelchair location-icon"></i>
+                            <div>
+                                <h4>Accessibility</h4>
+                                <p>Wheelchair accessible entrance and seating areas available</p>
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <i class="fas fa-bus location-icon"></i>
+                            <div>
+                                <h4>Public Transport</h4>
+                                <p>Accessible by bus routes 12, 45, and 67. Nearest bus stop: Ikotun Junction</p>
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <i class="fas fa-baby location-icon"></i>
+                            <div>
+                                <h4>Family Facilities</h4>
+                                <p>Nursery and children's areas available during services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What should I expect when visiting for the first time?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We're excited to welcome you! Our services are casual and friendly. Arrive a few minutes early to get settled, and our welcome team will be happy to help you find a seat and answer any questions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What is the dress code for services?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Come as you are! We don't have a strict dress code. Whether you're in jeans or formal wear, you're welcome. The most important thing is that you're comfortable.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you have programs for children?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! We have age-appropriate programs for children during our Sunday service, including nursery care for infants and engaging activities for older children.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How can I get involved in church activities?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>There are many ways to get involved! Visit our Ministries page to learn about our various programs, or speak with one of our pastors after service. We'd love to help you find your place in our church family.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>The Nest Church</h3>
+                    <p>Building a community where everyone can find their place in God's family and grow in their relationship with Jesus Christ.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="give.html">Give Online</a></li>
+                        <li><a href="prayer.html">Prayer Requests</a></li>
+                        <li><a href="testimonies.html">Share Testimony</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="live.html">Watch Live</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section contact-info">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Ikotun, Lagos, Nigeria</p>
+                    <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> info@thenestchurch.org</p>
+                    <p><i class="fas fa-clock"></i> Sunday Service: 2:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Nest Church. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

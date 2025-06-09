@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give - The Nest Church</title>
+    <meta name="description" content="Support The Nest Church through tithes, offerings, and seeds. Secure online giving made easy with multiple payment options.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/give.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">The Nest Church</a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sermons.html" class="nav-link">Sermons</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.html" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ministries.html" class="nav-link">Ministries</a>
+                </li>
+                <li class="nav-item">
+                    <a href="give.html" class="nav-link active">Give</a>
+                </li>
+                <li class="nav-item">
+                    <a href="prayer.html" class="nav-link">Prayer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="testimonies.html" class="nav-link">Testimonies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="live.html" class="nav-link btn btn-secondary">Watch Live</a>
+                </li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1920&h=600&fit=crop&crop=center" alt="Giving at The Nest Church" loading="lazy">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Giving at The Nest Church</h1>
+            <p>Your generosity helps us do more. Support our mission and ministry through your giving.</p>
+        </div>
+    </section>
+
+    <!-- Giving Introduction -->
+    <section class="giving-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Why We Give</h2>
+                <p>Giving is an act of worship and obedience to God. When we give, we participate in God's work and demonstrate our trust in His provision. Your generous contributions enable us to spread the Gospel, support our community, and advance God's kingdom.</p>
+                
+                <div class="giving-principles">
+                    <div class="principle">
+                        <div class="principle-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/>
+                            </svg>
+                        </div>
+                        <h3>Cheerful Giving</h3>
+                        <p>"God loves a cheerful giver" - 2 Corinthians 9:7</p>
+                    </div>
+                    
+                    <div class="principle">
+                        <div class="principle-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="m2 17 10 5 10-5"/>
+                                <path d="m2 12 10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3>Faithful Stewardship</h3>
+                        <p>We are stewards of God's resources, managing them wisely for His glory.</p>
+                    </div>
+                    
+                    <div class="principle">
+                        <div class="principle-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                                <path d="M2 12h20"/>
+                            </svg>
+                        </div>
+                        <h3>Kingdom Impact</h3>
+                        <p>Your giving supports local ministry and global missions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Giving Types -->
+    <section class="giving-types">
+        <div class="container">
+            <h2>Types of Giving</h2>
+            
+            <div class="giving-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="tithe">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/>
+                        </svg>
+                        Tithe
+                    </button>
+                    <button class="tab-btn" data-tab="offering">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"/>
+                            <path d="M2 7h20l-2-4H4l-2 4Z"/>
+                            <path d="M10 12v6"/>
+                            <path d="M14 12v6"/>
+                        </svg>
+                        Offering
+                    </button>
+                    <button class="tab-btn" data-tab="seed">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+                            <path d="M12 16v6"/>
+                            <path d="M8 18h8"/>
+                        </svg>
+                        Seed
+                    </button>
+                    <button class="tab-btn" data-tab="projects">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+                            <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+                            <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+                            <path d="M10 6h4"/>
+                            <path d="M10 10h4"/>
+                            <path d="M10 14h4"/>
+                            <path d="M10 18h4"/>
+                        </svg>
+                        Projects
+                    </button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-panel active" id="tithe">
+                        <div class="tab-info">
+                            <h3>Tithe</h3>
+                            <p>Tithing is giving 10% of your income as an act of worship and obedience to God. It's a biblical principle that demonstrates our trust in God's provision and acknowledges that everything we have comes from Him.</p>
+                            <blockquote>
+                                "Bring the whole tithe into the storehouse, that there may be food in my house. Test me in this," says the Lord Almighty, "and see if I will not throw open the floodgates of heaven and pour out so much blessing that there will not be room enough to store it."
+                                <cite>- Malachi 3:10</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-panel" id="offering">
+                        <div class="tab-info">
+                            <h3>Offering</h3>
+                            <p>Offerings are gifts given beyond the tithe to support the church's ministry and mission. These voluntary contributions help fund special projects, community outreach, and various ministry initiatives.</p>
+                            <blockquote>
+                                "Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."
+                                <cite>- 2 Corinthians 9:7</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-panel" id="seed">
+                        <div class="tab-info">
+                            <h3>Seed Offering</h3>
+                            <p>Seed offerings are special gifts given in faith for specific blessings or breakthroughs. Like a farmer who plants seeds expecting a harvest, we give seed offerings trusting God for His provision and blessing.</p>
+                            <blockquote>
+                                "Give, and it will be given to you. A good measure, pressed down, shaken together and running over, will be poured into your lap."
+                                <cite>- Luke 6:38</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-panel" id="projects">
+                        <div class="tab-info">
+                            <h3>Building & Projects</h3>
+                            <p>Support our church building projects, facility improvements, community outreach programs, and special ministry initiatives. Your contributions help us expand our capacity to serve God and our community.</p>
+                            <div class="current-projects">
+                                <h4>Current Projects:</h4>
+                                <ul>
+                                    <li>New Children's Ministry Wing</li>
+                                    <li>Community Outreach Center</li>
+                                    <li>Audio/Visual Equipment Upgrade</li>
+                                    <li>Youth Ministry Van</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Giving Form -->
+    <section class="giving-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Make a Donation</h2>
+                    <p>Secure payment processing via Paystack</p>
+                </div>
+                
+                <form class="giving-form" id="giving-form">
+                    <!-- Giving Type Selection -->
+                    <div class="form-section">
+                        <h3>Select Giving Type</h3>
+                        <div class="giving-type-grid">
+                            <label class="giving-type-option">
+                                <input type="radio" name="giving-type" value="tithe" checked>
+                                <div class="option-content">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/>
+                                    </svg>
+                                    <span>Tithe</span>
+                                </div>
+                            </label>
+                            
+                            <label class="giving-type-option">
+                                <input type="radio" name="giving-type" value="offering">
+                                <div class="option-content">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"/>
+                                        <path d="M2 7h20l-2-4H4l-2 4Z"/>
+                                        <path d="M10 12v6"/>
+                                        <path d="M14 12v6"/>
+                                    </svg>
+                                    <span>Offering</span>
+                                </div>
+                            </label>
+                            
+                            <label class="giving-type-option">
+                                <input type="radio" name="giving-type" value="seed">
+                                <div class="option-content">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+                                        <path d="M12 16v6"/>
+                                        <path d="M8 18h8"/>
+                                    </svg>
+                                    <span>Seed</span>
+                                </div>
+                            </label>
+                            
+                            <label class="giving-type-option">
+                                <input type="radio" name="giving-type" value="projects">
+                                <div class="option-content">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+                                        <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+                                        <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+                                        <path d="M10 6h4"/>
+                                        <path d="M10 10h4"/>
+                                        <path d="M10 14h4"/>
+                                        <path d="M10 18h4"/>
+                                    </svg>
+                                    <span>Projects</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Amount Selection -->
+                    <div class="form-section">
+                        <h3>Select Amount</h3>
+                        <div class="amount-grid">
+                            <label class="amount-option">
+                                <input type="radio" name="amount" value="1000">
+                                <div class="amount-content">
+                                    <span class="currency">₦</span>
+                                    <span class="amount-value">1,000</span>
+                                </div>
+                            </label>
+                            
+                            <label class="amount-option">
+                                <input type="radio" name="amount" value="5000">
+                                <div class="amount-content">
+                                    <span class="currency">₦</span>
+                                    <span class="amount-value">5,000</span>
+                                </div>
+                            </label>
+                            
+                            <label class="amount-option">
+                                <input type="radio" name="amount" value="10000">
+                                <div class="amount-content">
+                                    <span class="currency">₦</span>
+                                    <span class="amount-value">10,000</span>
+                                </div>
+                            </label>
+                            
+                            <label class="amount-option">
+                                <input type="radio" name="amount" value="25000">
+                                <div class="amount-content">
+                                    <span class="currency">₦</span>
+                                    <span class="amount-value">25,000</span>
+                                </div>
+                            </label>
+                            
+                            <label class="amount-option">
+                                <input type="radio" name="amount" value="50000">
+                                <div class="amount-content">
+                                    <span class="currency">₦</span>
+                                    <span class="amount-value">50,000</span>
+                                </div>
+                            </label>
+                            
+                            <label class="amount-option custom-amount">
+                                <input type="radio" name="amount" value="custom">
+                                <div class="amount-content">
+                                    <span>Custom</span>
+                                </div>
+                            </label>
+                        </div>
+                        
+                        <div class="custom-amount-input" id="custom-amount-input" style="display: none;">
+                            <label for="custom-amount-value">Enter Custom Amount</label>
+                            <div class="currency-input">
+                                <span class="currency-symbol">₦</span>
+                                <input type="number" id="custom-amount-value" name="custom-amount" placeholder="Enter amount" min="100">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="full-name">Full Name *</label>
+                                <input type="text" id="full-name" name="full-name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="address">Address (Optional)</label>
+                                <input type="text" id="address" name="address">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-submit">
+                        <div class="security-info">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <circle cx="12" cy="16" r="1"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                            <span>Your donation is secure and encrypted</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                                <line x1="1" y1="10" x2="23" y2="10"/>
+                            </svg>
+                            Proceed to Payment
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Ways to Give -->
+    <section class="other-ways-to-give">
+        <div class="container">
+            <h2>Other Ways to Give</h2>
+            
+            <div class="giving-methods">
+                <div class="method-card">
+                    <div class="method-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            <path d="M10 9h4"/>
+                            <path d="M10 13h4"/>
+                        </svg>
+                    </div>
+                    <h3>Bank Transfer</h3>
+                    <p>Transfer directly to our church account</p>
+                    <div class="bank-details">
+                        <p><strong>Bank:</strong> First Bank of Nigeria</p>
+                        <p><strong>Account Name:</strong> The Nest Church</p>
+                        <p><strong>Account Number:</strong> 1234567890</p>
+                    </div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>In-Person Giving</h3>
+                    <p>Give during our worship services</p>
+                    <div class="service-times">
+                        <p><strong>Sunday Service:</strong> 2:00 PM</p>
+                        <p><strong>Wednesday Bible Study:</strong> 6:00 PM</p>
+                        <p><strong>Friday Prayer Meeting:</strong> 7:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="giving-faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is online giving secure?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, absolutely. We use Paystack, a leading payment processor that employs bank-level security measures including SSL encryption and PCI compliance to protect your financial information.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I get a receipt for tax purposes?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you will receive an email receipt immediately after your donation is processed. We also provide annual giving statements for tax purposes at the beginning of each year.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is the difference between tithe and offering?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A tithe is 10% of your income given as an act of obedience and worship to God. An offering is any additional gift given beyond the tithe to support specific ministries or projects.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>The Nest Church</h3>
+                    <p>A place of grace, love, and spiritual growth</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="give.html">Give</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Service Times</h4>
+                    <p>Sunday Service: 2:00 PM</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Ikotun, Lagos, Nigeria
+                        </p>
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            +234 123 456 7890
+                        </p>
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            info@thenestchurch.org
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Nest Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/give.js"></script>
+</body>
+</html>

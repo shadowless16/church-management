@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Live - The Nest Church</title>
+    <meta name="description" content="Join The Nest Church live online! Watch our services, participate in live chat, and be part of our worship experience from anywhere in the world.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/live.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">The Nest Church</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="sermons.html" class="nav-link">Sermons</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="give.html" class="nav-link">Give</a></li>
+                <li><a href="prayer.html" class="nav-link">Prayer</a></li>
+                <li><a href="testimonies.html" class="nav-link">Testimonies</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="live.html" class="nav-link btn btn-primary active">Watch Live</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Live Status Banner -->
+        <div class="live-status" id="live-status">
+            <div class="container">
+                <div class="status-content">
+                    <div class="live-indicator">
+                        <div class="live-dot"></div>
+                        <span class="live-text">LIVE NOW</span>
+                    </div>
+                    <div class="live-info">
+                        <span class="service-title">Sunday Worship Service</span>
+                        <span class="viewer-count" id="viewer-count">234 viewers</span>
+                    </div>
+                    <div class="live-actions">
+                        <button class="btn btn-outline btn-small" id="share-stream">
+                            <i class="fas fa-share"></i> Share
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Player Section -->
+        <section class="video-section">
+            <div class="container">
+                <div class="video-layout">
+                    <!-- Main Video Player -->
+                    <div class="video-main">
+                        <div class="video-container">
+                            <div class="video-player" id="video-player">
+                                <!-- YouTube embed or custom video player -->
+                                <iframe 
+                                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=0&controls=1&rel=0" 
+                                    title="The Nest Church Live Stream"
+                                    frameborder="0" 
+                                    allowfullscreen
+                                    allow="autoplay; encrypted-media">
+                                </iframe>
+                                
+                                <!-- Custom Controls Overlay -->
+                                <div class="video-controls" id="video-controls">
+                                    <div class="controls-left">
+                                        <button class="control-btn" id="play-pause-btn">
+                                            <i class="fas fa-pause"></i>
+                                        </button>
+                                        <button class="control-btn" id="volume-btn">
+                                            <i class="fas fa-volume-up"></i>
+                                        </button>
+                                        <div class="volume-slider">
+                                            <input type="range" id="volume-range" min="0" max="100" value="50">
+                                        </div>
+                                    </div>
+                                    <div class="controls-right">
+                                        <button class="control-btn" id="quality-btn">
+                                            <i class="fas fa-cog"></i>
+                                        </button>
+                                        <button class="control-btn" id="fullscreen-btn">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video Info -->
+                        <div class="video-info">
+                            <div class="video-header">
+                                <h1>Sunday Worship Service - Walking in Divine Purpose</h1>
+                                <div class="video-meta">
+                                    <span class="speaker">Pastor John Adebayo</span>
+                                    <span class="date" id="current-date"></span>
+                                    <span class="time" id="current-time"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="video-actions">
+                                <button class="action-btn" id="like-btn">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Like</span>
+                                </button>
+                                <button class="action-btn" id="share-btn">
+                                    <i class="fas fa-share"></i>
+                                    <span>Share</span>
+                                </button>
+                                <button class="action-btn" id="prayer-btn">
+                                    <i class="fas fa-praying-hands"></i>
+                                    <span>Prayer Request</span>
+                                </button>
+                                <button class="action-btn" id="give-btn">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Give</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Service Details -->
+                        <div class="service-details">
+                            <div class="details-tabs">
+                                <button class="tab-btn active" data-tab="about">About</button>
+                                <button class="tab-btn" data-tab="scripture">Scripture</button>
+                                <button class="tab-btn" data-tab="notes">Notes</button>
+                            </div>
+                            
+                            <div class="tab-content active" id="about-tab">
+                                <h3>About Today's Service</h3>
+                                <p><strong>Message Topic:</strong> Walking in Divine Purpose - Discovering God's plan for your life</p>
+                                <p><strong>Key Points:</strong></p>
+                                <ul>
+                                    <li>Understanding God's calling on your life</li>
+                                    <li>Overcoming obstacles to your purpose</li>
+                                    <li>Walking in faith and obedience</li>
+                                    <li>Making an impact in your community</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tab-content" id="scripture-tab">
+                                <h3>Scripture References</h3>
+                                <div class="scripture-verse">
+                                    <p><strong>Jeremiah 29:11</strong></p>
+                                    <p>"For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, to give you hope and a future."</p>
+                                </div>
+                                <div class="scripture-verse">
+                                    <p><strong>Romans 8:28</strong></p>
+                                    <p>"And we know that in all things God works for the good of those who love him, who have been called according to his purpose."</p>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-content" id="notes-tab">
+                                <h3>Sermon Notes</h3>
+                                <p>Take notes during the service and download them afterward:</p>
+                                <textarea id="sermon-notes" placeholder="Write your notes here..."></textarea>
+                                <div class="notes-actions">
+                                    <button class="btn btn-outline" id="save-notes">Save Notes</button>
+                                    <button class="btn btn-outline" id="download-notes">Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="video-sidebar">
+                        <!-- Live Chat -->
+                        <div class="chat-section">
+                            <div class="chat-header">
+                                <h3>Live Chat</h3>
+                                <div class="chat-stats">
+                                    <i class="fas fa-users"></i>
+                                    <span id="chat-users">234</span>
+                                </div>
+                            </div>
+                            
+                            <div class="chat-messages" id="chat-messages">
+                                <!-- Chat messages will be dynamically loaded here -->
+                            </div>
+                            
+                            <div class="chat-input">
+                                <form id="chat-form">
+                                    <input type="text" id="chat-message" placeholder="Type your message..." maxlength="200">
+                                    <button type="submit" class="send-btn">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                                <div class="chat-guidelines">
+                                    <small>Please keep messages respectful and encouraging</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Upcoming Services -->
+                        <div class="upcoming-services">
+                            <h3>Upcoming Services</h3>
+                            <div class="service-list">
+                                <div class="service-item">
+                                    <div class="service-date">
+                                        <span class="day">WED</span>
+                                        <span class="date">11</span>
+                                    </div>
+                                    <div class="service-info">
+                                        <h4>Bible Study</h4>
+                                        <p>6:00 PM</p>
+                                        <small>Pastor Grace Adebayo</small>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-date">
+                                        <span class="day">FRI</span>
+                                        <span class="date">13</span>
+                                    </div>
+                                    <div class="service-info">
+                                        <h4>Prayer Meeting</h4>
+                                        <p>7:00 PM</p>
+                                        <small>Minister David Okafor</small>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-date">
+                                        <span class="day">SUN</span>
+                                        <span class="date">16</span>
+                                    </div>
+                                    <div class="service-info">
+                                        <h4>Sunday Service</h4>
+                                        <p>2:00 PM</p>
+                                        <small>Pastor John Adebayo</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Actions -->
+                        <div class="quick-actions">
+                            <h3>Quick Actions</h3>
+                            <div class="action-buttons">
+                                <a href="prayer.html" class="action-button">
+                                    <i class="fas fa-praying-hands"></i>
+                                    <span>Submit Prayer Request</span>
+                                </a>
+                                <a href="give.html" class="action-button">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Give Online</span>
+                                </a>
+                                <a href="contact.html" class="action-button">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Contact Pastor</span>
+                                </a>
+                                <a href="testimonies.html" class="action-button">
+                                    <i class="fas fa-star"></i>
+                                    <span>Share Testimony</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Prayer Requests -->
+                        <div class="prayer-requests">
+                            <h3>Prayer Requests</h3>
+                            <div class="prayer-list">
+                                <div class="prayer-item">
+                                    <p>"Please pray for my family's healing and unity."</p>
+                                    <small>- Anonymous</small>
+                                </div>
+                                <div class="prayer-item">
+                                    <p>"Seeking God's guidance for my career path."</p>
+                                    <small>- Sarah M.</small>
+                                </div>
+                                <div class="prayer-item">
+                                    <p>"Praying for financial breakthrough."</p>
+                                    <small>- David K.</small>
+                                </div>
+                            </div>
+                            <a href="prayer.html" class="view-all-link">View All Prayer Requests</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Archive -->
+        <section class="service-archive">
+            <div class="container">
+                <div class="archive-header">
+                    <h2>Recent Services</h2>
+                    <p>Catch up on recent messages if you missed them</p>
+                </div>
+                
+                <div class="archive-tabs">
+                    <button class="archive-tab-btn active" data-tab="recent">Recent</button>
+                    <button class="archive-tab-btn" data-tab="popular">Most Popular</button>
+                    <button class="archive-tab-btn" data-tab="series">Series</button>
+                </div>
+                
+                <div class="archive-content">
+                    <div class="archive-tab-content active" id="recent-archive">
+                        <div class="archive-grid">
+                            <div class="archive-item">
+                                <div class="archive-thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Previous Service" loading="lazy">
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                    <div class="duration">45:32</div>
+                                </div>
+                                <div class="archive-info">
+                                    <h4>Faith Over Fear</h4>
+                                    <p>Pastor John Adebayo</p>
+                                    <small>May 28, 2025</small>
+                                </div>
+                            </div>
+                            
+                            <div class="archive-item">
+                                <div class="archive-thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Previous Service" loading="lazy">
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                    <div class="duration">52:18</div>
+                                </div>
+                                <div class="archive-info">
+                                    <h4>The Power of Prayer</h4>
+                                    <p>Pastor Grace Adebayo</p>
+                                    <small>May 21, 2025</small>
+                                </div>
+                            </div>
+                            
+                            <div class="archive-item">
+                                <div class="archive-thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Previous Service" loading="lazy">
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                    <div class="duration">38:45</div>
+                                </div>
+                                <div class="archive-info">
+                                    <h4>Living with Purpose</h4>
+                                    <p>Pastor John Adebayo</p>
+                                    <small>May 14, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="archive-tab-content" id="popular-archive">
+                        <div class="archive-grid">
+                            <div class="archive-item">
+                                <div class="archive-thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Popular Service" loading="lazy">
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                    <div class="duration">1:02:15</div>
+                                    <div class="popular-badge">Most Watched</div>
+                                </div>
+                                <div class="archive-info">
+                                    <h4>Breakthrough in Prayer</h4>
+                                    <p>Pastor John Adebayo</p>
+                                    <small>April 30, 2025 • 1.2K views</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="archive-tab-content" id="series-archive">
+                        <div class="series-grid">
+                            <div class="series-item">
+                                <div class="series-thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Sermon Series" loading="lazy">
+                                    <div class="series-count">5 Messages</div>
+                                </div>
+                                <div class="series-info">
+                                    <h4>Walking in Faith</h4>
+                                    <p>A 5-part series on developing unshakeable faith</p>
+                                    <small>March - April 2025</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="archive-actions">
+                    <a href="sermons.html" class="btn btn-outline">View All Sermons</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offline Message -->
+        <section class="offline-message" id="offline-message" style="display: none;">
+            <div class="container">
+                <div class="offline-content">
+                    <i class="fas fa-video-slash offline-icon"></i>
+                    <h2>We're Currently Offline</h2>
+                    <p>Our next live service is:</p>
+                    <div class="next-service">
+                        <h3>Sunday Worship Service</h3>
+                        <p>June 9, 2025 at 2:00 PM</p>
+                        <div class="countdown" id="countdown">
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="days">0</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="hours">0</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="minutes">0</span>
+                                <span class="countdown-label">Minutes</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="seconds">0</span>
+                                <span class="countdown-label">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offline-actions">
+                        <a href="sermons.html" class="btn btn-primary">Watch Previous Services</a>
+                        <button class="btn btn-outline" id="notify-me">Notify Me When Live</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>The Nest Church</h3>
+                    <p>Building a community where everyone can find their place in God's family and grow in their relationship with Jesus Christ.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="give.html">Give Online</a></li>
+                        <li><a href="prayer.html">Prayer Requests</a></li>
+                        <li><a href="testimonies.html">Share Testimony</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="live.html">Watch Live</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section contact-info">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Ikotun, Lagos, Nigeria</p>
+                    <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> info@thenestchurch.org</p>
+                    <p><i class="fas fa-clock"></i> Sunday Service: 2:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Nest Church. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/live.js"></script>
+</body>
+</html>
