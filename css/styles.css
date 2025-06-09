@@ -17,8 +17,8 @@
   --dark-gray: #495057;
 
   /* Fonts */
-  --font-heading: "Poppins", sans-serif;
-  --font-body: "Open Sans", sans-serif;
+  --font-heading: "latin";
+  --font-body: "latin";
 
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -750,6 +750,12 @@ textarea {
   padding-top: var(--spacing-lg);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.8);
+}
+
+.thelink {
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-decoration: none;
 }
 
 /* Responsive Design */
