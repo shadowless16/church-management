@@ -8416,3 +8416,74 @@ Not Found: /.well-known/appspecific/com.chrome.devtools.json
 "GET /static/js/donations.js HTTP/1.1" 200 438
 "GET /static/js/blog.js HTTP/1.1" 200 19985
 Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 20262
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3761
+"GET /static/js/utils.js HTTP/1.1" 200 8095
+"OPTIONS /api/events/? HTTP/1.1" 200 0
+"OPTIONS /api/members/stats/ HTTP/1.1" 200 0
+"OPTIONS /api/members/? HTTP/1.1" 200 0
+"OPTIONS /api/donations/? HTTP/1.1" 200 0
+"OPTIONS /api/donations/stats/ HTTP/1.1" 200 0
+"OPTIONS /api/reports/ HTTP/1.1" 200 0
+Unauthorized: /api/events/
+Unauthorized: /api/members/
+Unauthorized: /api/members/stats/
+Unauthorized: /api/donations/
+Unauthorized: /api/donations/stats/
+Unauthorized: /api/reports/
+"GET /api/events/? HTTP/1.1" 401 183
+"GET /api/members/? HTTP/1.1" 401 183
+"GET /api/donations/stats/ HTTP/1.1" 401 183
+"GET /api/reports/ HTTP/1.1" 401 183
+"GET /api/members/stats/ HTTP/1.1" 401 183
+"GET /api/donations/? HTTP/1.1" 401 183
+"OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+"OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+"OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+"POST /api/auth/token/refresh/ HTTP/1.1" 200 582
+"POST /api/auth/token/refresh/ HTTP/1.1" 200 582
+"POST /api/auth/token/refresh/ HTTP/1.1" 200 582
+"POST /api/auth/token/refresh/ HTTP/1.1" 200 582
+"POST /api/auth/token/refresh/ HTTP/1.1" 200 582
+"POST /api/auth/token/refresh/ HTTP/1.1" 200 582
+"OPTIONS /api/auth/logout/ HTTP/1.1" 200 0
+Bad Request: /api/auth/logout/
+"POST /api/auth/logout/ HTTP/1.1" 400 25
+"GET /login HTTP/1.1" 301 0
+"GET /login/ HTTP/1.1" 200 6877
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3761
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 930
+"GET / HTTP/1.1" 200 20262
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3761
+"GET /api/members/? HTTP/1.1" 200 4761
+"GET /api/members/stats/ HTTP/1.1" 200 240
+"GET /api/donations/? HTTP/1.1" 200 52
+"GET /api/reports/ HTTP/1.1" 200 52
+"GET /api/events/? HTTP/1.1" 200 4152
+"GET /api/donations/stats/ HTTP/1.1" 200 562
+Bad Request: /api/auth/logout/
+"POST /api/auth/logout/ HTTP/1.1" 400 25
+"GET /login/ HTTP/1.1" 200 6877
+"POST /api/auth/login/ HTTP/1.1" 200 930
+"GET / HTTP/1.1" 200 20262
+"GET /api/donations/? HTTP/1.1" 200 52
+"GET /api/reports/ HTTP/1.1" 200 52
+"GET /api/events/? HTTP/1.1" 200 4152
+"GET /api/members/? HTTP/1.1" 200 4761
+"GET /api/members/stats/ HTTP/1.1" 200 240
+"GET /api/donations/stats/ HTTP/1.1" 200 562
+Bad Request: /api/auth/logout/
+"POST /api/auth/logout/ HTTP/1.1" 400 25
+"GET /login/ HTTP/1.1" 200 6877
+"POST /api/auth/login/ HTTP/1.1" 200 930
+"GET / HTTP/1.1" 200 20262
+"GET /api/members/? HTTP/1.1" 200 4761
+"GET /api/members/stats/ HTTP/1.1" 200 240
+"GET /api/events/? HTTP/1.1" 200 4152
+"GET /api/donations/? HTTP/1.1" 200 52
+"GET /api/reports/ HTTP/1.1" 200 52
+"GET /api/donations/stats/ HTTP/1.1" 200 562
