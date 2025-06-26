@@ -1,6 +1,3 @@
-// frontend/utils.js
-// Utility functions for the church management frontend
-
 // Show toast notification
 export function showToast(message, type = 'error') {
     const oldToast = document.getElementById('toast-message');

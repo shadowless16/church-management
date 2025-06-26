@@ -17,6 +17,25 @@ import { renderMembers } from './members.js';
 import { renderEvents } from './events.js';
 import { renderDashboard } from './dashboard.js';
 import { renderDonations } from './donations.js';
+import {
+    renderBlog,
+    openBlogPostModal,
+    handleBlogPost,
+    renderTags,
+    viewBlogPost,
+    editBlogPost,
+    deleteBlogPost,
+    addCategory,
+    renderCategories,
+    deleteCategory,
+    filterBlogPosts,
+    populateBlogForm,
+    resetBlogForm,
+    handleImageUpload,
+    addTag,
+    removeTag,
+    openCategoryModal
+} from './blog.js';
 
 // Church Management System JavaScript
 
@@ -27,7 +46,8 @@ class ChurchManagementSystem {
             members: { members: [], stats: {} },
             events: { events: [] },
             donations: { donations: [], stats: {} },
-            reports: { reports: [] }
+            reports: { reports: [] },
+            blog: { blog: [] }
         };
         this.currentPage = 'dashboard';
         this.init();
@@ -195,7 +215,8 @@ class ChurchManagementSystem {
             events: 'Events',
             donations: 'Donations',
             reports: 'Reports',
-            settings: 'Settings'
+            settings: 'Settings',
+            blog: 'Blog'
         };
         document.getElementById('page-title').textContent = titles[page];
 
@@ -227,10 +248,11 @@ class ChurchManagementSystem {
             case 'settings':
                 renderSettings(this, content, headerActions);
                 break;
+            case 'blog':
+                renderBlog(content, headerActions);
+                break;
         }
     }
-
-    // Remove the original renderDashboard, renderDonations, renderReports, renderSettings methods from this file.
 
     // Helper to show toast notifications
     showToast(message, type = 'error') {

@@ -99,9 +99,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR.parent / 'frontend',
+    BASE_DIR / "static",  # Only include the static folder inside backend
 ]
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # Where collectstatic will collect to
 
 # Media files
 MEDIA_URL = '/media/'

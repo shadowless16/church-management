@@ -256,6 +256,56 @@ DEFAULT_FROM_EMAIL=noreply@church.com
 - **Database**: MongoDB Atlas, self-hosted MongoDB
 - **Frontend**: Netlify, Vercel, or serve with Django
 
+## Developer Guide
+
+### Project Structure
+
+- `backend/` — Django backend (API, models, authentication, business logic)
+- `frontend/` — HTML/CSS/JS frontend (dashboard, forms, static assets)
+- `app/`, `css/`, `js/`, `public/`, `img/`, `styles/` — Additional static and UI resources
+
+### Running the Project Locally
+
+**Backend:**
+1. `cd backend`
+2. Create and activate a virtual environment
+3. `pip install -r requirements.txt`
+4. Configure `.env` (see Environment Variables section)
+5. `python manage.py migrate`
+6. `python manage.py runserver`
+
+**Frontend:**
+1. `cd frontend`
+2. `python -m http.server 3000`
+3. Visit [http://localhost:3000](http://localhost:3000)
+
+### Adding Features
+
+**Backend:**
+- Add models in `backend/<app>/models.py`
+- Add serializers in `backend/<app>/serializers.py`
+- Add API views in `backend/<app>/views.py`
+- Register routes in `backend/<app>/urls.py`
+- Run `python manage.py makemigrations && python manage.py migrate`
+
+**Frontend:**
+- Add/modify UI in `frontend/*.html` and `frontend/*.js`
+- Use `frontend/api.js` for API calls
+- Use modular JS files for each feature (e.g., `members.js`, `events.js`)
+
+### Testing
+
+- Backend: Add tests in `backend/<app>/tests.py`, run with `python manage.py test`
+- Frontend: Manual testing via browser (add automated tests as needed)
+
+### Coding Standards
+
+- Use clear, descriptive names for variables, functions, and files
+- Keep backend logic in Django apps, frontend logic in JS modules
+- Use environment variables for secrets and configuration
+- Write docstrings/comments for complex logic
+- Follow PEP8 for Python, and standard JS style for frontend
+
 ## Contributing
 
 1. Fork the repository
@@ -277,10 +327,6 @@ For support and questions:
 
 ## Future Enhancements
 
-- Mobile app development
-- Advanced reporting with charts
 - Email notification system
-- Calendar integration (Google Calendar, Outlook)
 - Payment gateway integration
 - Multi-church support
-- Advanced user roles and permissions

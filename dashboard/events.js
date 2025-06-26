@@ -1,5 +1,3 @@
-// frontend/events.js
-// Event-related rendering and logic
 import { showToast, safeLocale, fillEventModal, renderCalendar, openModal, closeModal, showDayEventsModal } from './utils.js';
 
 export function renderEvents(app, content, headerActions) {

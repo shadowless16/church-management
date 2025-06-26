@@ -805,3 +805,195 @@ body {
 .gap-2 { gap: 8px; }
 .gap-4 { gap: 16px; }
 
+#view-member-modal .modal-content {
+  padding: 32px 32px 24px 32px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  max-width: 420px;
+  width: 100%;
+  margin: auto;
+}
+#view-member-modal .modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 24px 32px 16px 32px;
+  border-bottom: 1px solid #e2e8f0;
+}
+#view-member-modal h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0;
+  color: #22223b;
+}
+#view-member-modal .modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #64748b;
+  cursor: pointer;
+  transition: color 0.2s;
+  margin-left: 8px;
+}
+#view-member-modal .modal-close:hover {
+  color: #ef4444;
+}
+#member-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  padding: 24px 32px 0 32px;
+}
+#member-details div {
+  font-size: 1.08rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+#member-details b {
+  min-width: 90px;
+  font-weight: 600;
+  color: #22223b;
+  letter-spacing: 0.01em;
+}
+#member-details span {
+  color: #334155;
+  font-weight: 400;
+  word-break: break-word;
+}
+#view-member-modal .modal-footer {
+  padding: 24px 32px 24px 32px;
+  background: #f8fafc;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #e2e8f0;
+}
+#view-member-modal .btn.btn-secondary {
+  background: #fff;
+  color: #22223b;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 8px 22px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  transition: background 0.2s, border 0.2s;
+}
+#view-member-modal .btn.btn-secondary:hover {
+  background: #f1f5f9;
+  border-color: #a5b4fc;
+}
+
+/* Modern, elegant modal styling for Edit Member */
+#edit-member-modal .modal-content {
+  padding: 0;
+  border-radius: 18px;
+  background: #f8fafc;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+  max-width: 420px;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+#edit-member-modal .modal-content {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+#edit-member-modal .modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 24px 32px 16px 32px;
+  border-bottom: 1px solid #e2e8f0;
+}
+#edit-member-modal h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0;
+  color: #22223b;
+}
+#edit-member-modal .modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #64748b;
+  cursor: pointer;
+  transition: color 0.2s;
+  margin-left: 8px;
+}
+#edit-member-modal .modal-close:hover {
+  color: #ef4444;
+}
+#edit-member-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  padding: 24px 32px 0 32px;
+}
+#edit-member-modal .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+#edit-member-modal label {
+  font-weight: 600;
+  color: #22223b;
+  font-size: 1rem;
+}
+#edit-member-modal input[type="text"],
+#edit-member-modal input[type="email"] {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+  color: #22223b;
+}
+#edit-member-modal .modal-footer {
+  padding: 24px 32px 24px 32px;
+  background: #f8fafc;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  border-top: 1px solid #e2e8f0;
+}
+#edit-member-modal .btn.btn-primary {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 22px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  transition: background 0.2s;
+}
+#edit-member-modal .btn.btn-primary:hover {
+  background: #4338ca;
+}
+#edit-member-modal .btn.btn-secondary {
+  background: #fff;
+  color: #22223b;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 8px 22px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  transition: background 0.2s, border 0.2s;
+}
+#edit-member-modal .btn.btn-secondary:hover {
+  background: #f1f5f9;
+  border-color: #a5b4fc;
+}
+@media (max-width: 600px) {
+  #view-member-modal .modal-content, #view-member-modal .modal-header, #member-details, #view-member-modal .modal-footer,
+  #edit-member-modal .modal-content, #edit-member-modal .modal-header, #edit-member-modal form, #edit-member-modal .modal-footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

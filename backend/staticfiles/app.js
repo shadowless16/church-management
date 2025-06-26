@@ -9,12 +9,33 @@ import {
     deleteMember,
     createEvent,
     deleteEvent,
-    logout as apiLogout
+    logout as apiLogout,
+    ChurchAPI
 } from './api.js';
 import { showToast as showToastUtil, safeLocale as safeLocaleUtil } from './utils.js';
 import { renderMembers } from './members.js';
 import { renderEvents } from './events.js';
 import { renderDashboard } from './dashboard.js';
+import { renderDonations } from './donations.js';
+import {
+    renderBlog,
+    openBlogPostModal,
+    handleBlogPost,
+    renderTags,
+    viewBlogPost,
+    editBlogPost,
+    deleteBlogPost,
+    addCategory,
+    renderCategories,
+    deleteCategory,
+    filterBlogPosts,
+    populateBlogForm,
+    resetBlogForm,
+    handleImageUpload,
+    addTag,
+    removeTag,
+    openCategoryModal
+} from './blog.js';
 
 // Church Management System JavaScript
 
@@ -25,7 +46,8 @@ class ChurchManagementSystem {
             members: { members: [], stats: {} },
             events: { events: [] },
             donations: { donations: [], stats: {} },
-            reports: { reports: [] }
+            reports: { reports: [] },
+            blog: { blog: [] }
         };
         this.currentPage = 'dashboard';
         this.init();
@@ -61,122 +83,75 @@ class ChurchManagementSystem {
 
     setupEventListeners() {
         // Navigation
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const page = e.target.closest('.nav-link').dataset.page;
-                this.loadPage(page);
-            });
-        });
-
-        // Mobile menu
-        document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
-            document.querySelector('.sidebar').classList.toggle('open');
-        });
-
-        // User dropdown
-        document.querySelector('.dropdown-toggle').addEventListener('click', (e) => {
-            e.stopPropagation();
-            const menu = document.querySelector('.dropdown-menu');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-        });
-
-        // Close dropdown when clicking outside
-        document.addEventListener('click', () => {
-            document.querySelector('.dropdown-menu').style.display = 'none';
-        });
-
-        // Add member form
-        document.getElementById('add-member-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            this.handleAddMember(e);
-        });
-
-        // Edit member form
-        const editForm = document.getElementById('edit-member-form');
-        if (editForm) {
-            editForm.addEventListener('submit', async (e) => {
-                e.preventDefault();
-                const formData = new FormData(editForm);
-                // Try to get memberId from the currently filled modal
-                let memberId = null;
-                const idInput = editForm.querySelector('[name="id"]');
-                if (idInput && idInput.value) {
-                    memberId = idInput.value;
-                } else {
-                    // Fallback: try to find by email
-                    const email = formData.get('email');
-                    const member = this.data.members.members.find(m => m.email === email);
-                    if (member) memberId = member.id;
-                }
-                if (!memberId) {
-                    this.showToast('Could not determine which member to update.', 'error');
-                    return;
-                }
-                // Build address object
-                const address = {
-                    street: formData.get('street') || '',
-                    city: formData.get('city') || '',
-                    state: formData.get('state') || '',
-                    zip: formData.get('zip') || ''
-                };
-                // Ministries as array (comma separated or single input)
-                let ministry = [];
-                if (formData.get('ministry')) {
-                    ministry = formData.get('ministry').split(',').map(s => s.trim()).filter(Boolean);
-                }
-                // Build memberData
-                const memberData = {
-                    first_name: formData.get('first_name') || '',
-                    last_name: formData.get('last_name') || '',
-                    email: formData.get('email') || '',
-                    phone: formData.get('phone') || '',
-                    date_of_birth: formData.get('date_of_birth') || null,
-                    gender: formData.get('gender') || '',
-                    address: address,
-                    status: formData.get('status') || 'new',
-                    join_date: formData.get('join_date') || null,
-                    ministry: ministry,
-                    notes: formData.get('notes') || ''
-                };
-                const api = new ChurchAPI();
-                try {
-                    await api.updateMember(memberId, memberData);
-                    this.closeModal('edit-member-modal');
-                    await this.loadData();
-                    this.renderPage('members');
-                    this.showToast('Member updated successfully!', 'success');
-                } catch (err) {
-                    this.showToast('Failed to update member: ' + (err.message || 'Unknown error'), 'error');
-                    console.error('Failed to update member:', err);
-                }
+        const navLinks = document.querySelectorAll('.nav-link');
+        if (navLinks.length) {
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const page = e.target.closest('.nav-link').dataset.page;
+                    this.loadPage(page);
+                });
             });
         }
 
-        // Modal close
-        document.querySelectorAll('.modal-close').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                const modal = e.target.closest('.modal');
-                this.closeModal(modal.id);
+        // Mobile menu
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const sidebar = document.querySelector('.sidebar');
+                if (sidebar) sidebar.classList.toggle('open');
             });
+        }
+
+        // User dropdown
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        if (dropdownToggle) {
+            dropdownToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const menu = document.querySelector('.dropdown-menu');
+                if (menu) menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', () => {
+            const menu = document.querySelector('.dropdown-menu');
+            if (menu) menu.style.display = 'none';
         });
+
+        // Modal close
+        const modalCloseBtns = document.querySelectorAll('.modal-close');
+        if (modalCloseBtns.length) {
+            modalCloseBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const modal = e.target.closest('.modal');
+                    if (modal) this.closeModal(modal.id);
+                });
+            });
+        }
 
         // Close modal when clicking outside
-        document.querySelectorAll('.modal').forEach(modal => {
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    this.closeModal(modal.id);
-                }
+        const modals = document.querySelectorAll('.modal');
+        if (modals.length) {
+            modals.forEach(modal => {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        this.closeModal(modal.id);
+                    }
+                });
             });
-        });
+        }
 
         // Logout button
-        document.querySelectorAll('.logout-btn').forEach(btn => {
-            btn.addEventListener('click', async () => {
-                await apiLogout();
-                window.location.href = '/login';
+        const logoutBtns = document.querySelectorAll('.logout-btn');
+        if (logoutBtns.length) {
+            logoutBtns.forEach(btn => {
+                btn.addEventListener('click', async () => {
+                    await apiLogout();
+                    window.location.href = 'login';
+                });
             });
-        });
+        }
     }
 
     loadPage(page = 'dashboard') {
@@ -193,7 +168,8 @@ class ChurchManagementSystem {
             events: 'Events',
             donations: 'Donations',
             reports: 'Reports',
-            settings: 'Settings'
+            settings: 'Settings',
+            blog: 'Blog'
         };
         document.getElementById('page-title').textContent = titles[page];
 
@@ -212,6 +188,7 @@ class ChurchManagementSystem {
                 break;
             case 'members':
                 renderMembers(this, content, headerActions);
+                this.attachAddMemberFormListener(); // Attach after rendering
                 break;
             case 'events':
                 renderEvents(this, content, headerActions);
@@ -225,10 +202,24 @@ class ChurchManagementSystem {
             case 'settings':
                 renderSettings(this, content, headerActions);
                 break;
+            case 'blog':
+                renderBlog(content, headerActions);
+                break;
         }
     }
 
-    // Remove the original renderDashboard, renderDonations, renderReports, renderSettings methods from this file.
+    // Attach add-member-form event listener after rendering members page
+    attachAddMemberFormListener() {
+        const addForm = document.getElementById('add-member-form');
+        if (addForm) {
+            // Remove previous listener if any
+            addForm.onsubmit = null;
+            addForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                this.handleAddMember(e);
+            });
+        }
+    }
 
     // Helper to show toast notifications
     showToast(message, type = 'error') {
@@ -320,6 +311,11 @@ class ChurchManagementSystem {
             this.showToast('Could not determine which event to update.', 'error');
             return;
         }
+        const description = formData.get('description') || '';
+        if (!description.trim()) {
+            this.showToast('Description is required and cannot be blank.', 'error');
+            return;
+        }
         const eventData = {
             title: formData.get('title') || '',
             date: formData.get('date') || '',
@@ -327,7 +323,7 @@ class ChurchManagementSystem {
             location: formData.get('location') || '',
             ministry: formData.get('ministry') || '',
             status: formData.get('status') || '',
-            description: formData.get('description') || ''
+            description: description
         };
         const api = new ChurchAPI();
         try {
@@ -343,8 +339,7 @@ class ChurchManagementSystem {
     }
 
     async deleteEvent(eventId) {
-        const api = new ChurchAPI();
-        await api.deleteEvent(eventId);
+        await deleteEvent(eventId);
     }
 
     openModal(modalId) {

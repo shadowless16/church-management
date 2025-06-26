@@ -41,6 +41,11 @@
   --transition: all 0.3s ease;
 }
 
+img {
+  width: 10%;
+  height: 10%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -756,6 +761,121 @@ textarea {
   color: var(--secondary-color);
   font-weight: 600;
   text-decoration: none;
+}
+
+/* Add Member Modal Custom Styles */
+.add-member-modal-content {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  padding: 32px 32px 24px 32px;
+  background: var(--white);
+}
+
+.add-member-modal-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.add-member-form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 16px;
+}
+
+.add-member-form-row .form-group {
+  width: 100%;
+}
+
+.add-member-form-row.address-row {
+  flex-direction: row;
+  gap: 8px;
+}
+
+.add-member-form-row.address-row .form-group {
+  flex: 1;
+}
+
+.add-member-form-footer {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.add-member-modal-content label {
+  font-weight: 500;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.add-member-modal-content input,
+.add-member-modal-content select,
+.add-member-modal-content textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #e9ecef;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  margin-bottom: 0;
+  background: #f8f9fa;
+  transition: var(--transition);
+}
+
+.add-member-modal-content input:focus,
+.add-member-modal-content select:focus,
+.add-member-modal-content textarea:focus {
+  border-color: var(--primary-color);
+  background: #fff;
+}
+
+.add-member-modal-content textarea {
+  min-height: 48px;
+  resize: vertical;
+}
+
+.add-member-modal-content .ministries-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+.add-member-modal-content .ministries-row label {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.add-member-modal-content .modal-close {
+  font-size: 2rem;
+  position: absolute;
+  right: 24px;
+  top: 16px;
+  cursor: pointer;
+}
+
+.add-member-modal-content .btn-primary {
+  min-width: 140px;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.add-member-modal-content .btn-secondary {
+  min-width: 100px;
+  background: #f1f5f9;
+  color: #4f46e5;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
 }
 
 /* Responsive Design */

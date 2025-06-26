@@ -13,7 +13,7 @@ urlpatterns = [
     path('api/donations/', include('donations.urls')),
     path('api/reports/', include('reports.urls')),
     path('login/', login_page, name='login'),
-    path('', TemplateView.as_view(template_name='index.html'), name='home'),
+    path('', TemplateView.as_view(template_name='dashboard.html'), name='home'),
 ]
 
 if settings.DEBUG:

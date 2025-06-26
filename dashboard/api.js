@@ -362,6 +362,10 @@ export async function fetchEvents(params = {}) {
     return api.getEvents(params);
 }
 
+export async function fetchBlog(params = {}) {
+    return api.getBlog(params);
+}
+
 export async function fetchDonations(params = {}) {
     return api.getDonations(params);
 }
